@@ -461,6 +461,7 @@ color: #1b5b80;
 #practice img{
     width: 200px;
     height: 200px;
+    border-radius: 10%;
 }
 
 /*footer*/
