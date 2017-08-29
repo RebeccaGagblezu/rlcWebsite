@@ -54,7 +54,7 @@ a:focus {
 
 .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        background-color: #d06c31;
     }
 
 .navbar {
@@ -62,7 +62,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #white;
+    background-color: white;
 }
 
 .navbar-brand {
@@ -75,7 +75,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #428bca;
 }
 
 .navbar-custom .nav li a {
@@ -89,6 +89,7 @@ a:focus {
 .navbar-custom .nav li.active {
     outline: 0;
     background-color: rgba(33,90,128,.5);
+    color: white;
 }
 
 .navbar-toggle {
@@ -115,7 +116,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        background-color: #fff;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -247,9 +248,9 @@ a:focus {
 .download-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
+    color: #000;
     /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
-    background-color: #215a80;
+    background-color: #f4f6f7;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -448,8 +449,19 @@ body {
 /*practice area*/
 #practice h4{
 margin-top: 30px;
+text-align: center;
+color: #1b5b80;
 }
 
+
+#practice p{
+    text-align: center;
+}
+
+#practice img{
+    width: 200px;
+    height: 200px;
+}
 
 /*footer*/
 .footer{
@@ -552,10 +564,14 @@ margin-top: 30px;
 
 .downFooter {
     text-align: center;
-    background-color: #000;
+    background-color: #fff;
     display: block;
-    color: white;
+    color: #000;
     padding: 20px 0px;
+}
+
+#contact{
+    background-color: #d4e0e7;
 }
 
 
