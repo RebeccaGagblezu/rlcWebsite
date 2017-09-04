@@ -7,6 +7,7 @@
 }
 
 
+
 @font-face {
     font-family: "Timeless_Bold";
     src: url("fonts/Timeless-Bold.ttf");
@@ -36,7 +37,6 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -52,6 +52,7 @@ p {
         margin: 0 0 35px;
         font-size: 1.2em;
         line-height: 1.6;
+         /*letter-spacing: 0.05em;*/
     }
 }
 
@@ -180,6 +181,7 @@ a:focus
     color: #fff;
     background: url(../img/luat-hinh-su.jpg) no-repeat;
     background-color: #000;
+
     background-size: cover;
     background-position: center center;
 }
@@ -351,7 +353,6 @@ a:focus
 
 .btn {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
