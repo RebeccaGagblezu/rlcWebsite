@@ -1,21 +1,25 @@
+@import url('font-awesome.min.css');
+
 
 @font-face {
-font-family: "CooperHewitt Thin";
-src: url("css/fonts/CooperHewitt-Thin.eot");
-src: 
-url("css/fonts/CooperHewitt-Thin.woff") format("woff"),
-url("css/fonts/CooperHewitt-Thin.otf") format("opentype"),
-url("css/fonts/CooperHewitt-Thin.svg") format("svg");
+    font-family: "Timeless";
+    src: url("fonts/Timeless.ttf");
 }
 
 
+@font-face {
+    font-family: "Timeless_Bold";
+    src: url("fonts/Timeless-Bold.ttf");
+}
 
+*{
+    font-family: "Timeless";
+}
 
 body {
     width: 100%;
     height: 100%;
     /*font-family: "Hind",sans-serif;*/
-    font-family: 'Roboto', sans-serif;
     color: #000;
     /*background-color: #000;*/
 }
@@ -31,7 +35,6 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
     text-transform: uppercase;
     /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-weight: 700;
@@ -40,14 +43,14 @@ h6 {
 
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size:1em;
     line-height: 1.5;
 }
 
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 1.2em;
         line-height: 1.6;
     }
 }
@@ -96,10 +99,21 @@ a:focus
     color: #428bca;
 }
 
+.navbar-custom{
+    background-color: #FFFFFF !important;
+    box-shadow: 1px 0px 1px #CCC;
+}
+
+.navbar-custom.top-nav-collapse{
+    border:0 !important;
+}
+
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+    text-align: center;
+    font-family: "Timeless_Bold";
 }
 
 .navbar-custom .nav li a:hover,
@@ -107,7 +121,7 @@ a:focus
 .navbar-custom .nav li.active
  {
     outline: 0;
-    background-color: rgba(33,90,128,.5);
+    background-color: #1d5b7e;
     /*background-color: rgba(244, 246, 247, 0.3)*/
     color: white;
 }
@@ -161,25 +175,27 @@ a:focus
 .intro {
     display: table;
     width: 100%;
-    height: auto;
-    padding: 100px 0;
+/*    height: auto;*/
     text-align: center;
     color: #fff;
-    background: url(../img/promo-26.jpg) no-repeat bottom center scroll;
+    background: url(../img/luat-hinh-su.jpg) no-repeat;
     background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: 100% 100%;
-    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
 }
 
 .introText{
-    background-color: rgba(38, 97, 129, 0.3);
-
+    float: left;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.64);
+    padding: 70px 0;
+    text-align: center;
 }
 
 .introText p{
-    font-size: 60px;
+    font-size: 2em;
+    word-spacing: 1em;
+    letter-spacing: 10px;
 }
 
 .introText h1{
@@ -196,17 +212,18 @@ a:focus
 }
 
 .intro-text {
-    font-size: 18px;
+    font-size: 1em;
 }
 
 @media(min-width:767px) {
     .intro {
-        height: 100%;
+        /*height: 100%;*/
         padding: 0;
     }
 
     .brand-heading {
-        font-size: 100px;
+        padding-top:70px;
+        font-size:3.5em;
     }
 
     .intro-text {
@@ -215,7 +232,7 @@ a:focus
 }
 
 .btn-circle {
-    width: 70px;
+    /*width: 70px;*/
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
@@ -289,19 +306,26 @@ a:focus
 }
 
 .content-section {
-    padding-top: 100px;
+    padding: 60px 0;
 }
 
 .download-section {
     width: 100%;
     padding: 50px 0;
     color: #000;
-    /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
+    background: url(../img/bq.jpg) no-repeat center center;
+    filter: grayscale(0.7);
+    background-attachment: fixed;
     background-color: #f4f6f7;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.download-section > .container{
+    color:#FFFFFF !important;
+    background-color: hsla(0, 0%, 0%, 0.46);
 }
 
 #map {
@@ -312,7 +336,7 @@ a:focus
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 100px;
+        /*padding-top: 100px;*/
     }
 
     .download-section {
@@ -497,7 +521,7 @@ body {
 #practice h4{
 margin-top: 30px;
 text-align: center;
-color: #1b5b80;
+color: #FFFFFF;
 }
 
 
@@ -506,14 +530,14 @@ color: #1b5b80;
 }
 
 #practice img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 150px;
     border-radius: 10%;
 }
 
 /*footer*/
 .footer{
-    background-color: #215a80;
+    background-color: #002a44;
     color: white;
 }
 
@@ -612,14 +636,14 @@ color: #1b5b80;
 
 .downFooter {
     text-align: center;
-    background-color: #fff;
+    background-color: #001c2d;
     display: block;
-    color: #000;
+    color: #FFF;
     padding: 20px 0px;
 }
 
 #contact{
-    background-color: #d4e0e7;
+    background-color: #e3e5e6;
 }
 
 
