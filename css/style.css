@@ -644,7 +644,32 @@ color: #FFFFFF;
 }
 
 #contact{
-    background-color: #e3e5e6;
+    
+    display: table;
+    width: 100%;
+/*    height: auto;*/
+    text-align: center;
+    color: #fff;
+    background: url(../img/images1.jpg) no-repeat;
+     background: linear-gradient(rgba(0, 42, 68, 0.7), rgba(0, 42, 68, 0.7)), url("../img/images1.jpg");
+    background-color: #000;
+     background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+
+    background-color:white;
+}
+
+#contact input,#contact textarea{
+    background-color:transparent;
+}
+
+.footer tr{
+    margin-top: 5px;
+}
+
+table {
+    border-collapse: collapse;
 }
 
 
