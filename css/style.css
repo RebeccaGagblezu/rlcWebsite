@@ -359,14 +359,14 @@ a:focus
     transition: all .3s ease-in-out;
 }
 
-.btn-default {
+  .btn-default:hover,
+.btn-default:focus{
     border: 1px solid #215a80;
-    color: #215a80;
+    color: #215a80;        
     background-color: transparent;
 }
 
-.btn-default:hover,
-.btn-default:focus {
+ .btn-default{
     border: 1px solid #215a80;
     outline: 0;
     color: white;
@@ -630,7 +630,7 @@ color: #FFFFFF;
 
 .fa-linkedin-square {
     /*background: #55ACEE;*/
-    color: #000;
+    color: #fff;
     font-size: 50px !important;
     padding-left: 20px;
 }
@@ -664,12 +664,16 @@ color: #FFFFFF;
     background-color:transparent;
 }
 
+.cont{
+    padding: 0px 20px
+}
 .footer tr{
     margin-top: 5px;
 }
 
-table {
-    border-collapse: collapse;
+.footable {
+    border-collapse: separate;
+    border-spacing: 10px 10px;
 }
 
 
