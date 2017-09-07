@@ -97,7 +97,7 @@ a:focus
 }
 
 .navbar-custom a {
-    color: #428bca;
+    color: #306585;
 }
 
 .navbar-custom{
@@ -237,7 +237,7 @@ a:focus
     /*width: 70px;*/
     height: 70px;
     margin-top: 15px;
-    padding: 7px 16px;
+    /*padding: 7px 16px;*/
     border: 2px solid #fff;
     border-radius: 35px;
     font-size: 40px;
@@ -361,16 +361,16 @@ a:focus
 
   .btn-default:hover,
 .btn-default:focus{
-    border: 1px solid #215a80;
-    color: #215a80;        
+    border: 1px solid #ffffff;
+    color: #f3f3f3;        
     background-color: transparent;
 }
 
  .btn-default{
-    border: 1px solid #215a80;
+    border: 1px solid #325467;
     outline: 0;
     color: white;
-    background-color: #215a80;
+    background-color: #1e5b80;
 }
 
 .btn-huge {
@@ -593,6 +593,9 @@ color: #FFFFFF;
     height: 300px;
 }
 
+hr{
+    border-top: 1px solid #26495f;
+}
 
 /* Flexible iFrame */
 
@@ -602,6 +605,7 @@ color: #FFFFFF;
     padding-top: 30px;
     height: 0;
     overflow: hidden;
+    border-radius:10px;
 }
 
 .Flexible-container iframe,   
@@ -622,7 +626,7 @@ color: #FFFFFF;
 
 
 .fa {
-    padding: 20px;
+    /*padding: 20px;*/
     text-align: center;
     text-decoration: none !important;
     margin: 5px 2px;
@@ -660,8 +664,15 @@ color: #FFFFFF;
     background-color:white;
 }
 
+#maps{
+    border: 2px solid #4b6585;
+    padding: 0;
+    border-radius: 10px;
+}
+
 #contact input,#contact textarea{
-    background-color:transparent;
+    background-color:rgba(255, 255, 255, 0.21);
+    border-color:#325467;
 }
 
 .cont{
