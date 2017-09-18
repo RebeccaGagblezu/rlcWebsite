@@ -30,6 +30,11 @@ html {
     height: 100%;
 }
 
+h1{
+    color: #1e5b7e;
+    margin-bottom: 50px
+}
+
 h1,
 h2,
 h3,
@@ -179,7 +184,7 @@ a:focus
 /*    height: auto;*/
     text-align: center;
     color: #fff;
-    background: url(../img/luat-hinh-su.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 42, 68, 0.7), rgba(0, 42, 68, 0.7)), url(../img/luat-hinh-su.jpg) no-repeat;
     background-color: #000;
 
     background-size: cover;
@@ -314,9 +319,10 @@ a:focus
 .download-section {
     width: 100%;
     padding: 50px 0;
-    color: #000;
-    background: url(../img/bq.jpg) no-repeat center center;
-    filter: grayscale(0.7);
+    /*color: #000;*/
+    background: linear-gradient(rgba(245, 245, 245, .7), rgba(245, 245, 245, .7)), url(../img/bq.jpg) no-repeat center center;
+    /*background: url(../img/bq.jpg) no-repeat center center;*/
+    filter: grayscale(0.1);
     background-attachment: fixed;
     background-color: #f4f6f7;
     -webkit-background-size: cover;
@@ -327,7 +333,7 @@ a:focus
 
 .download-section > .container{
     color:#FFFFFF !important;
-    background-color: hsla(0, 0%, 0%, 0.46);
+    /*background-color: hsla(203, 62%, 31%,0.5);;*/
 }
 
 #map {
@@ -530,10 +536,52 @@ color: #FFFFFF;
     text-align: center;
 }
 
-#practice img{
-    width: 100px;
-    height: 150px;
-    border-radius: 10%;
+#practice img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.pracCards{
+     width: 100%;
+    /*height: 100px;*/
+    padding: 15px;
+    background-color: #1e5b7e;
+    box-shadow: 10px 10px 5px rgba(4, 31, 45, 0.31);
+    margin-bottom: 30px;
+}
+
+.teamCards{
+     width: 100%;
+    /*height: 100px;*/
+    padding: 15px;
+    background-color: #f1f0f0;
+    box-shadow: 10px 10px 5px #657077;
+    margin-bottom: 30px;
+}
+
+
+.content-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*justify-content: center;*/
+  margin: 10px 0;
+  color: white;
+
+}
+
+/* On Mobiles (screen width <= 767px) */
+@media screen and (max-width: 767px) {
+  .content-holder {
+    flex-direction: row;
+  }
+  
+  .text-div {
+    margin-left: 10px;
+  }
+
 }
 
 /*footer*/
@@ -634,24 +682,24 @@ hr{
 
 .fa-linkedin-square {
     /*background: #55ACEE;*/
-    color: #fff;
+    color: #235a79;
     font-size: 30px !important;
     padding-left: 20px;
 }
 
 .downFooter {
     text-align: center;
-    background-color: #001c2d;
+    background-color: #1e5b80;
     display: block;
-    color: #FFF;
+    color: #f4f4f4;
     padding: 20px 0px;
 }
 
-#contact{
+/*#contact{
     
     display: table;
     width: 100%;
-/*    height: auto;*/
+  
     text-align: center;
     color: #fff;
     background: url(../img/images1.jpg) no-repeat;
@@ -662,17 +710,50 @@ hr{
     background-position: center center;
 
     background-color:white;
+}*/
+
+#contact {
+  position: relative;  /*Parent MUST be relative*/
+  z-index: 9;
+  background: #f4f4f4;
+  
+  /*Set width/height of the div in 'parent'*/
+  width: 100%;
+  /*height: 100px;*/
+}
+#contact:before {
+  content: "";
+  position: absolute; /*set 'child' to be absolute*/
+  z-index: -1;  /*Make this lower so text appears in front*/
+  
+  
+  
+  /*You can choose to align it left, right, top or bottom here*/
+  top: 0;
+  right: 0;
+  bottom: 50%;
+  left: 0;
+  background: #235a79;
+}
+
+.conn{
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 6px 6px  #888888;
+    padding: 20px;
 }
 
 #maps{
     border: 2px solid #4b6585;
     padding: 0;
     border-radius: 10px;
+    width: 400px;
+
 }
 
 #contact input,#contact textarea{
-    background-color:rgba(255, 255, 255, 0.21);
-    border-color:#325467;
+    background-color: rgb(244, 244, 244);
+    /*border-color: #235a79;*/
 }
 
 .cont{
@@ -691,4 +772,9 @@ hr{
     border-spacing: 10px 10px;
 }
 
+.btn-info {
+    color: #fff;
+    background-color: #235a79;
+    border-color: #235a79;
+}
 
