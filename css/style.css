@@ -1,7 +1,7 @@
 @import url('font-awesome.min.css');
 
 
-@font-face {
+/*@font-face {
     font-family: "Timeless";
     src: url("fonts/Timeless.ttf");
 }
@@ -15,7 +15,7 @@
 
 *{
     font-family: "Timeless";
-}
+}*/
 
 body {
     width: 100%;
@@ -23,6 +23,8 @@ body {
     /*font-family: "Hind",sans-serif;*/
     color: #000;
     /*background-color: #000;*/
+    /*font-family: 'Hind', sans-serif;*/
+font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -367,9 +369,9 @@ a:focus
 
   .btn-default:hover,
 .btn-default:focus{
-    border: 1px solid #ffffff;
-    color: #f3f3f3;        
-    background-color: transparent;
+    border: 3px solid #1e5b80;
+    color: #1e5b80;
+    background-color: #f4f4f4;
 }
 
  .btn-default{
@@ -524,6 +526,14 @@ body {
     opacity: 1;
 }
 
+
+
+/*team names*/
+.teamName{
+    font-size: 25px;
+    color: #1e5b7e;
+}
+
 /*practice area*/
 #practice h4{
 margin-top: 30px;
@@ -561,6 +571,16 @@ color: #FFFFFF;
     margin-bottom: 30px;
 }
 
+.teamCard2{
+    /*height: 730px;*/
+    min-height: 730px;
+
+}
+
+/*teamCard1{
+    height: 2px;
+}*/
+
 
 .content-holder {
   display: flex;
@@ -580,8 +600,13 @@ color: #FFFFFF;
   
   .text-div {
     margin-left: 10px;
+    font-size: 15px;
   }
 
+}
+
+#practice .text-div{
+    font-size: 20px;
 }
 
 /*footer*/
@@ -738,7 +763,7 @@ hr{
 
 .conn{
     background-color: white;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 2px 6px 6px  #888888;
     padding: 20px;
 }
@@ -747,7 +772,7 @@ hr{
     border: 2px solid #4b6585;
     padding: 0;
     border-radius: 10px;
-    width: 400px;
+    width: 100%;
 
 }
 
@@ -776,5 +801,21 @@ hr{
     color: #fff;
     background-color: #235a79;
     border-color: #235a79;
+}
+
+.fa-phone{
+    color: #1e5b7e;
+}
+
+.fa-envelope{
+    color: #1e5b7e;
+}
+
+.fa-home{
+    color: #1e5b7e;
+}
+
+.fa-map-marker{
+    color: #1e5b7e;
 }
 
