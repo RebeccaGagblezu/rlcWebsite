@@ -21,10 +21,10 @@ body {
     width: 100%;
     height: 100%;
     /*font-family: "Hind",sans-serif;*/
-    color: #000;
+    color: #666;
     /*background-color: #000;*/
     /*font-family: 'Hind', sans-serif;*/
-font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -97,6 +97,8 @@ a:focus
 .navbar-brand {
     
     padding: 0px !important;
+    margin-bottom: 0px;
+    width: 150px;
 }
 
 .navbar-brand:focus {
@@ -193,6 +195,7 @@ a:focus
 
     background-size: cover;
     background-position: center center;
+    
 }
 
 .introText{
@@ -814,7 +817,7 @@ hr{
 }
 
 .form-control{
-    color: #fff;
+    /*color: #fff;*/
 }
 .footer tr{
     margin-top: 5px;
@@ -847,4 +850,40 @@ hr{
 .fa-map-marker{
     color: white;
 }
+/*show more and less*/
+/*.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}*/
+
+#profile-description {
+    width: 100%; margin-top: 50px; position:relative;
+}
+.teamCards .text {
+    width: 100%; 
+    margin-bottom: 5px; 
+    /*color: #777; */
+    padding: 0 15px; 
+    position:relative; 
+    /*font-family: Arial; */
+    font-size: 14px; 
+    display: block;
+}
+#profile-description .show-more  {
+    width: 100%; 
+    /*color: #777; */
+    position:relative; 
+    font-size: 12px; 
+    padding-top: 5px; 
+    height: 20px; 
+    text-align: center; 
+    background: #f1f1f1; 
+    cursor: pointer;
+}
+#profile-description .show-more:hover { 
+    color: #1779dd;
+}
+#profile-description .show-more-height { height: 300px; overflow:hidden; }
 
