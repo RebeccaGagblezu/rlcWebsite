@@ -147,6 +147,11 @@ a:focus
     background-color: blue;
 }
 
+.active { 
+    color: white;
+    background-color: blue;
+}
+
 .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
@@ -195,7 +200,11 @@ a:focus
 
     background-size: cover;
     background-position: center center;
-    
+
+
+    max-width: 100%;
+    height: auto;
+
 }
 
 .introText{
@@ -327,7 +336,7 @@ a:focus
 }
 
 .download-section {
-    width: 100%;
+    /*width: 100%;*/
     padding: 50px 0;
     /*color: #000;*/
     background: linear-gradient(rgba(245, 245, 245, .7), rgba(245, 245, 245, .7)), url(../img/pexels-photo-515167.jpeg) no-repeat center center;
@@ -339,6 +348,10 @@ a:focus
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .download-section > .container{

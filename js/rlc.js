@@ -18,6 +18,28 @@ $(function() {
     });
 });
 
+// show more and less
+
+jQuery(function(){
+
+$(".show-more").click(function () {
+        // $(this).text("Read less");
+    $(this).siblings(".text").toggleClass("show-more-height");
+    if($(this).text() == 'Read less')
+       {
+           $(this).text('Read more');
+       }
+       else
+       {
+           $(this).text('Read less');
+       }
+
+    });
+
+
+});
+
+
 //Google Map Skin - Get more at http://snazzymaps.com/
 var myOptions = {
     zoom: 15,
